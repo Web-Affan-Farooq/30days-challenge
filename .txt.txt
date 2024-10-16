@@ -1,0 +1,36 @@
+project-1 countdown timer  --completed ---  ready
+project-2 weather widget app  -- completed  --ready
+project-3 Birthday wishing app
+project-4 Number guessing game --completed  --ready
+project-5 Calculator  --completed  --ready
+project-6 Digital clock app  --completed  --ready
+project-7 Random joke generator  --completed  --ready
+project-8 color picker application
+project-9 tip calculator app --completed  --ready
+project-10 password generator app  --completed  --ready
+project-11 Bmi calculator app --completed  --ready
+project-12 unit convertor app
+project-13 Html previewer app
+project-14 Pomodoro timer
+project-15 Expense tracker
+project-16 Movie search app  --completed  --ready
+project-17 Meme genarator app
+project-18 Currency convertor app
+project-19 Github profile viewer app
+project-20 Notes app
+project-21 Recipe search app
+project-22 word counter  --completed --ready
+project-23 image slider app
+projects-24 Quiz app
+project-25 stop watch
+project-26 Snake game
+project-27 url shortener
+project-28 todolist app
+project-29 Random user generator
+project-30 audio player
+
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off"
+  }
+
+
