@@ -1,0 +1,1 @@
+## word counter application using nextjs tailwindcss and shadcn-ui
