@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from 'react';
 
 const Home = () => {
@@ -11,43 +10,25 @@ const Home = () => {
     <title>Document</title>
 </head>
 <body>
-    <h1>fhkjfhjkhdfjkd fdfjshdfkjhdf dfjkhdshfd fjkhdfjhdfjhd f</h1>
-    <h1>fhkjfhjkhdfjkd fdfjshdfkjhdf dfjkhdshfd fjkhdfjhdfjhd f</h1>
-    <h1>fhkjfhjkhdfjkd fdfjshdfkjhdf dfjkhdshfd fjkhdfjhdfjhd f</h1>
-    <h1>fhkjfhjkhdfjkd fdfjshdfkjhdf dfjkhdshfd fjkhdfjhdfjhd f</h1>
-    <h1>fhkjfhjkhdfjkd fdfjshdfkjhdf dfjkhdshfd fjkhdfjhdfjhd f</h1>
-    <h1>fhkjfhjkhdfjkd fdfjshdfkjhdf dfjkhdshfd fjkhdfjhdfjhd f</h1>
-    <h1>fhkjfhjkhdfjkd fdfjshdfkjhdf dfjkhdshfd fjkhdfjhdfjhd f</h1>
-    <h1>fhkjfhjkhdfjkd fdfjshdfkjhdf dfjkhdshfd fjkhdfjhdfjhd f</h1>
+    <h1>Hello world</h1>
 </body>
 </html>`);
 
-  const handleWindow = (event: any) => {
-    let newWindow = window.open(window.URLSearchParams.toString(), "_blank");
+  const handleCode = (event:React.ChangeEvent<HTMLTextAreaElement>) => {
+    sethtml(event.target.value);
   }
-
   return (
-    <div className='container'>
-      <div className="card">
-        <h1>HTML Previewer App</h1>
-        <button type="button" className="calculate" onClick={handleWindow}>Run</button>
+    <div>
+      <div className="head">
+        <h1>HTML Previewer</h1>
         <br />
         <br />
-        <br />
-        <label htmlFor="select from unit">Write some html code</label>
-        <br /><br />
-        <textarea name="code" id="code" value={html} onChange={(e: any) => {
-          sethtml(e.target.value);
-        }}>
-        </textarea>
       </div>
-      <div className="results">
-        <iframe src={html}>
-        </iframe>
+      <div className="container">
+        <textarea name='code' id='code' value={html} className="notePad" onChange={handleCode}>
+          </textarea>
+        <iframe className="results" srcDoc={html}></iframe>
       </div>
-      <br />
-      <br />
-      <br />
     </div>
   )
 }

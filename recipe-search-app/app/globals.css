@@ -12,10 +12,12 @@ body {
 * {
   font-family: "Poppins", serif;
 }
-
+a {
+  text-decoration: none;
+}
 .container {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background: url('https://i.pinimg.com/564x/23/76/0a/23760acac7918992c874165274c4e7bb.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -125,4 +127,15 @@ button:active {
 .trend-content>h3,
 .trend-content>p {
   margin: 0;
+}
+.card-large {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.5);
+color: black;
+margin: auto;
+position: relative;
+top: 50px;
+padding: 20px;
 }

@@ -1,16 +1,16 @@
-project-1 countdown timer  --completed ---  ready
-project-2 weather widget app  -- completed  --ready
+project-1 countdown timer  --completed ---  ready deployed
+project-2 weather widget app  -- completed  --ready deployed
 project-3 Birthday wishing app
-project-4 Number guessing game --completed  --ready
-project-5 Calculator  --completed  --ready
-project-6 Digital clock app  --completed  --ready
-project-7 Random joke generator  --completed  --ready
+project-4 Number guessing game --completed  --ready deployed
+project-5 Calculator  --completed  --ready deployed
+project-6 Digital clock app  --completed  --ready deployed
+project-7 Random joke generator  --completed  --ready  deployed
 project-8 color picker application
-project-9 tip calculator app --completed  --ready
+project-9 tip calculator app --completed  --ready deployed
 project-10 password generator app  --completed  --ready
 project-11 Bmi calculator app --completed  --ready
 project-12 unit convertor app
-project-13 Html previewer app
+project-13 Html previewer app  --completed
 project-14 Pomodoro timer
 project-15 Expense tracker
 project-16 Movie search app  --completed  --ready
