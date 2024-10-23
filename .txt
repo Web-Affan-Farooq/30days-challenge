@@ -7,13 +7,13 @@ project-6 Digital clock app  --completed  --ready deployed
 project-7 Random joke generator  --completed  --ready  deployed
 project-8 color picker application
 project-9 tip calculator app --completed  --ready deployed
-project-10 password generator app  --completed  --ready
-project-11 Bmi calculator app --completed  --ready
+project-10 password generator app  --completed  --ready  --deployed
+project-11 Bmi calculator app --completed  --ready --deployed
 project-12 unit convertor app
-project-13 Html previewer app  --completed
+project-13 Html previewer app  --completed  --deployed
 project-14 Pomodoro timer
 project-15 Expense tracker
-project-16 Movie search app  --completed  --ready
+project-16 Movie search app  --completed  --ready  --deployed
 project-17 Meme genarator app
 project-18 Currency convertor app
 project-19 Github profile viewer app
@@ -28,6 +28,10 @@ project-27 url shortener
 project-28 todolist app
 project-29 Random user generator
 project-30 audio player
+
+
+create ui of recipe app
+create currency convertor
 
   "rules": {
     "@typescript-eslint/no-unused-vars": "off"
