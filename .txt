@@ -26,7 +26,7 @@ project-25 stop watch
 project-26 Snake game
 project-27 url shortener
 project-28 todolist app
-project-29 Random user generator
+project-29 Random user generator  --ready  --completed --published
 project-30 audio player
 
 
