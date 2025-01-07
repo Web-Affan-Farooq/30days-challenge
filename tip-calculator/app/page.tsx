@@ -1,51 +1,29 @@
 "use client";
 import React, { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+import { Input } from '@/components/ui/input';
 
 const Home = () => {
-  const [amount, setamount] = useState<number>();
-  const [tip, setTip] = useState<number>();
-  const [message, setmessage] = useState<React.ReactElement>();
+    const [amount, setamount] = useState<string>();
+  const [tip, setTip] = useState<string>();
 
-  const handleCalculation = (event:React.MouseEvent<HTMLButtonElement>) => {
-    console.log(amount);
-    console.log(Number(tip) /100);
-    // console.log("Tip : ", Number(amount) * Number(tip) /100);
-    setmessage(<p>{`Tip : ${Number(amount) * Number(tip) /100}`} Rs /-</p>)
+    const handleCalculation = (event:React.MouseEvent<HTMLButtonElement>) => {
+    toast.custom(<p className='bg-black text-[15px] py-[10px] px-[20px] rounded-md text-white'>{`Tip : ${Number(amount) * Number(tip) /100}`} Rs /-</p>,{
+      duration:500,
+      position:"top-left"
+    })
   }
-
   return (
-    <div>
-      <div className="card">
-        <h1>Tip Calculator App</h1>
-        <input
-          type="number"
-          name="amount"
-          id="amount"
-          placeholder="Enter your amount"
-          required
-          onChange={(e:React.ChangeEvent<HTMLInputElement>) => {
-            setamount(Number(e.target.value))
-          }}
-        />
-        <br />
-        <br />
-        <input
-          type="number"
-          name="tip"
-          id="tip"
-          placeholder="Enter tip in percentage"
-          required
-          onChange={(e:React.ChangeEvent<HTMLInputElement>) => {
-            setTip(Number(e.target.value))
-          }}
-        />
-        <br />
-        <br />
-        <button type="button" className="calculate" onClick={handleCalculation}>
-          Calculate Tip
-        </button>
-        {message}
-      </div>
+    <div className='relative top-20 w-[360px] m-auto rounded-lg p-[20px] bg-blue text-white flex flex-col flex-nowrap gap-5 max-sm:w-[90vw]'>
+      <Toaster/>
+      <h1 className='font-bold text-2xl'>Tip calculator</h1>
+      <Input type='text' onChange={(e:React.ChangeEvent<HTMLInputElement>) => {
+        setamount(e.target.value)
+      }}/>
+      <Input type='text' placeholder='Enter tip in percentage' onChange={(e:React.ChangeEvent<HTMLInputElement>) => {
+        setTip(e.target.value)
+      }}/>
+      <div>      <button type="button" className='px-[20px] py-[10px] font-semibold text-black bg-yellow rounded-lg ' onClick={handleCalculation}>Calculate</button></div>
     </div>
   )
 }
